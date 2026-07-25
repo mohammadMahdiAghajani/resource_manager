@@ -1,0 +1,10 @@
+lib/
+│
+├── models/
+├── views/
+├── view_models/
+├── repositories/ data_base
+├── services/ api,files,aoth
+├── widgets/
+├── utils/
+└── main.dart

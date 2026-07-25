@@ -1,0 +1,42 @@
+name: book_adder_2
+description: "A new Flutter project."
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  dio: ^5.10.0
+  flutter_layout_grid: ^2.0.8
+  hive: ^2.2.3
+  zu_widgets:
+    path: D:/projects/my_packages/zu_widgets
+  flutter_animate: ^4.5.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+
+
+  fonts:
+    - family: Pinar
+      fonts:
+        - asset: src/Pinar.ttf
