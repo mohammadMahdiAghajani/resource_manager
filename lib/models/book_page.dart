@@ -22,22 +22,25 @@ class BookPage extends Model {
   factory BookPage.fromJson(String json) {
     return BookPage()..fromJson(json);
   }
+  factory BookPage.fromMap(Map map) {
+    return BookPage()..fromMap(map);
+  }
 
   @override
   void fromJson(String json) {
     final m = jsonDecode(json);
-    bookPageId = m['book_page_id'];
-    pageId = m['page_id'];
-    bookId = m['book_id'];
-    pageNumber = m['page_number'];
-    pageText = m['page_text'];
-    createdBy = m['created_by'];
-    footer = m['footer'];
+    fromMap(m);
   }
 
   @override
-  void fromMap(Map<dynamic, dynamic> map) {
-    // TODO: implement fromMap
+  void fromMap(Map map) {
+    bookPageId = map['book_page_id'];
+    pageId = map['page_id'];
+    bookId = map['book_id'];
+    pageNumber = map['page_number'];
+    pageText = map['page_text'];
+    createdBy = map['created_by'];
+    footer = map['footer'];
   }
 
   @override

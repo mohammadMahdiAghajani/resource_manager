@@ -24,8 +24,8 @@ class ResourceRepositorie implements Repositorie {
   }
 
   @override
-  Future<bool> read(covariant Resource resource) async {
-    return true;
+  Future<Resource> read(covariant Resource resource) async {
+    return Resource();
   }
 
   @override

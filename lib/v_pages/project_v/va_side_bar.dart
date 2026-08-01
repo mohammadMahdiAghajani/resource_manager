@@ -16,6 +16,12 @@ class SideBar extends StatefulWidget {
 
 class _SideBarState extends State<SideBar> {
   @override
+  void initState() {
+    widget.vm.getAuthors();
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Align(
       alignment: .topCenter,

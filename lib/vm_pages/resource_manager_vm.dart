@@ -24,8 +24,6 @@ class ResourceManagerVM extends ChangeNotifier {
 
   Future<void> getContents() async {
     contents = await bookRepo.getBookList(currentResource, pageNumber, 20);
-    contents.forEach(print);
-    print('----------');
     notifyListeners();
   }
 

@@ -6,8 +6,8 @@ class ShortArticleRepositorie implements Repositorie {
   final shortArticleService = ShortArticleService();
 
   @override
-  Future<bool> read(covariant ShortArticle shortArticle) async {
-    return true;
+  Future<ShortArticle> read(covariant ShortArticle shortArticle) async {
+    return ShortArticle();
   }
 
   @override

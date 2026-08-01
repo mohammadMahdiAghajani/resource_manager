@@ -1,3 +1,4 @@
+import 'package:book_adder_2/models/author.dart';
 import 'package:book_adder_2/models/contents/book.dart';
 import 'package:book_adder_2/models/interface/content.dart';
 import 'package:book_adder_2/models/resource.dart';
@@ -20,12 +21,14 @@ class ResourceV extends StatefulWidget {
   final ResourceRepositorie resourceRepo;
   final BookRepositorie bookRepo;
   final ShortArticleRepositorie shortArticlesRepo;
+  final List<Author> authors;
   const ResourceV({
     super.key,
     required this.resource,
     required this.resourceRepo,
     required this.bookRepo,
     required this.shortArticlesRepo,
+    required this.authors,
   });
 
   @override
@@ -102,7 +105,11 @@ class _ResourceVState extends State<ResourceV> {
     void onEdit() {
       pushMaterialPage(
         context: context,
-        child: BookV(book: book, bookRepo: widget.bookRepo),
+        child: BookV(
+          book: book,
+          bookRepo: widget.bookRepo,
+          authors: widget.authors,
+        ),
       );
     }
 

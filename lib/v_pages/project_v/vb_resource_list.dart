@@ -39,7 +39,12 @@ class _ResourceListState extends State<ResourceList> {
           resourceRepo: widget.vm.resourceRepo,
           bookRepo: widget.vm.bookRepo,
           shortArticlesRepo: widget.vm.shortArticlesRepo,
+          authors: widget.vm.authors.value,
         ),
+        // onBack: (p0) async {
+        //   await widget.vm.getResources();
+        //   setState(emptyFunction);
+        // },
       );
     }
 

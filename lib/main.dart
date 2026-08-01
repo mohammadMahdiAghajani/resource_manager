@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:book_adder_2/v_pages/project_v/va_project.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -27,9 +26,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: .fromSeed(seedColor: Colors.blue),
         // appBarTheme: appBarTheme(color: Colors.blue),
-        scaffoldBackgroundColor: Color(0xfffcfcfc),
+        scaffoldBackgroundColor: Color(0xfffbfbfb),
         fontFamily: 'Pinar',
         textTheme: TextTheme(
+          bodyMedium: const TextStyle(fontSize: 15),
           titleSmall: const TextStyle(fontWeight: .bold),
           titleMedium: const TextStyle(fontWeight: .bold),
           titleLarge: const TextStyle(fontWeight: .bold),

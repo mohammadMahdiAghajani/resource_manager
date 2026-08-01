@@ -24,7 +24,7 @@ class AuthorRepositorie implements Repositorie {
   }
 
   @override
-  Future<bool> read(covariant Author author) {
+  Future<Author> read(covariant Author author) {
     // TODO: implement read
     throw UnimplementedError();
   }

@@ -11,8 +11,8 @@ class ProjectRepositorie implements Repositorie {
   }
 
   @override
-  Future<bool> read(covariant Project project) async {
-    return true;
+  Future<Project> read(covariant Project project) async {
+    return Project();
   }
 
   @override

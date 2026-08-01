@@ -19,6 +19,7 @@ dependencies:
   zu_widgets:
     path: D:/projects/my_packages/zu_widgets
   flutter_animate: ^4.5.2
+  file_picker: ^11.0.2
 
 dev_dependencies:
   flutter_test:
